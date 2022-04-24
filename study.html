@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Certificate</title>
+    <style>
+        *{
+            font-size:large;
+            
+        }
+        .div{
+            padding-top: 200px;
+        }
+        .div1{
+            padding-left: 40px;
+            padding-right:50px;
+            font-family: cursive;
+
+        }
+        .div3{
+            padding-top: 60px;
+            padding-right:80px;
+            font-family: cursive;
+        }
+        p{
+
+            text-align:right;
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body onclick="printFunction()" onload="setData()">
+    <div class="div">
+        <p style="font-family: cursive;">Date:<span id="d"></span></p>
+        <br>
+        <h2 align="center"><u>STUDY CERTIFICATE</u></h2>
+        <div class="div1">
+    This is to certify that <b>Mr.</b><b>Regd.No.<span id="reg"></span></b>
+    is a student of this institute.He has joined in the 1st BDS course during the academic year &nbsp;<span id="y"></span>.
+    At present he is studying Second BDS course.
+    <br><br>
+    <br>
+    <div class="div2" style="font-family: cursive;">
+        This certificate is issued with reference to her letter dated &nbsp;<span id="d"></span>for &nbsp;<span id="p"></span> &nbsp;purpose.
+        <br>
+        <br><br>
+        <div class="div3" align="right">
+            PRINCIPAL
+        </div>
+    </div>
+</div>
+    </div>
+    <br>
+    <br>
+    <script>
+        function printFunction(){
+            window.print();
+        }
+        function setData()
+        {
+            if(typeof(localStorage) != "undefined")
+            {
+              document.getElementById("d").innerHTML=localStorage.date1;
+              document.getElementById("reg").innerHTML = localStorage.regno1;
+              document.getElementById("p").innerHTML=localStorage.pur1;
+              document.getElementById("y").innerHTML = localStorage.yr1;
+    }
+}
+        
+    </script>
+</body>
+</html>

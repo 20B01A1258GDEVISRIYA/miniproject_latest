@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custodian Certificate</title>
+    <style>
+        *{
+            font-size: large;
+        }
+        .div{
+            padding-top: 200px;
+        }
+        .div1{
+            padding-left: 40px;
+            padding-right:50px;
+
+        }
+        .div4{
+            padding-top: 60px;
+            padding-right:80px;
+        }
+        p{
+
+            text-align:right;
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body onclick="printFunction()" onload="setData()">
+    <div class="div">
+        <p style="font-family: cursive;">Date:<span id="d2"></span></p>
+        <br>
+        <h2 align="center"><u>CUSTODIAN CERTIFICATE</u></h2>
+        <div class="div1" style="font-family: cursive;">
+    This is to certify that <b>Ms._____,</b><b>Regd.No.<span id="reg2"></span>,</b>
+    is a student of this institute.
+    <br><br>
+    <br>
+    <div class="div2" style="font-family: cursive;">
+        The following original certificates of Ms. ___________ are with this college & in our possession:
+    <ol>
+            <li>
+                10 <sup>th</sup> class</li>
+                <li>Intermediate</li>
+                <li>6<sup>th</sup> to 10 <sup>th</sup> Study certificates </li>
+                <li>Intermediate TC</li>
+                <li>Caste Certificate</li>      
+        </ol>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <div class="div3" style="font-family: cursive;">
+            This certificate is issued on request her letter dated ____  for &nbsp;<span id="p2"></span> purpose
+        </div>
+        <div class="div4" align="right" style="font-family: cursive;">
+            PRINCIPAL
+        </div>
+    </div>
+</div>
+    </div>
+    <br>
+    <br>
+    <script>
+        function printFunction(){
+            window.print();
+        }
+        function setData()
+        {
+            if(typeof(localStorage) != "undefined")
+            {
+              document.getElementById("d2").innerHTML=localStorage.date2;
+              document.getElementById("reg2").innerHTML = localStorage.regno2;
+              document.getElementById("p2").innerHTML=localStorage.pur2;
+    }
+}
+    </script>
+    
+</body>
+</html>

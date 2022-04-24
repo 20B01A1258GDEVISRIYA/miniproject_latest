@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>college e-certificate generation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://career.webindia123.com/career/institutes/aspupload/Uploads/andhra-pradesh/21950/logo.jpg" rel="icon">
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.7.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"><img src="data:image/png;base64,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"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">study certificate</a></li>
+          <li><a class="nav-link scrollto" href="#services">custodian certificate</a></li>
+          <li><a class="nav-link scrollto " href="#concern">concern certificate</a></li>
+          <li><a class="nav-link scrollto " href="#fee">fee certificate</a></li>
+          <li><a class="nav-link scrollto " href="#residence">residence certificate</a></li>
+          <li><a class="nav-link scrollto " href="#internship">internship certificate</a></li>
+          <li><a class="nav-link scrollto" href="#study">study&conduct certificate</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">College e-certificate generation</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Vishnu,Dental,College,Bhimavaram"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8" style="margin-left:220px">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:220px;color:crimson">STUDY&nbsp;CERTIFICATE</p></div>
+                     <div align="center" style="margin-left:200px;background-color: rgb(163, 93, 163);">
+                         <form action="study.html" role="form" class="form" align="center" id="form1">
+                           <br>
+                            <input type="date" placeholder="date" class="form-control" id="date">
+                            <br>
+                            <input type="text" placeholder="registration nmuber" class="form-control" id="rno">
+                            <br>
+                            <input type="text" placeholder="purpose" class="form-control" id="purpose">
+                            <br>
+                            <input type="text" placeholder="year" class="form-control" id="year">
+                            <br>
+                            <button class="btn btn-primary"  id="b1">submit</button>
+
+                         </form>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        if(document.getElementById('b1').clicked==true)
+        {
+          b1.addEvetListener("onclick",function()
+          {
+            if(typeof(localStorage) != "undefined")
+            {
+               localStorage.date1= document.getElementById("date").value;
+               localStorage.regno1=document.getElementById("rno").value;
+               localStorage.pur1= document.getElementById("purpose").value;
+               localStorage.yr1=document.getElementById("year").value;
+            }
+            document.getElementById("form1").submit();
+          })
+        }
+        
+    </script>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8" style="margin-left:220px">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:200px;color:crimson">CUSTODIAN&nbsp;CERTIFICATE</p></div>
+                     <div align="center" style="margin-left:200px;background-color:rgb(172, 172, 249)">
+                         <form action="custodian.html" role="form" class="form" align="center" id="form2">
+                           <br>
+                            <input type="date" placeholder="date" class="form-control" id="date2">
+                            <br>
+                            <input type="text" placeholder="registration nmuber" class="form-control" id="rno2">
+                            <br>
+                            <input type="text" placeholder="purpose" class="form-control" id="purpose2">
+                            <br>
+                            <button class="btn btn-primary"id="b2">submit</button>
+
+                         </form>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        if(document.getElementById('b2').clicked==true)
+        {
+          b2.addEvetListener("onclick",function()
+          {
+            if(typeof(localStorage) != "undefined")
+            {
+               localStorage.date2= document.getElementById("date2").value;
+               localStorage.regno2=document.getElementById("rno2").value;
+               localStorage.pur2= document.getElementById("purpose2").value;
+               localStorage.yr2=document.getElementById("year2").value;
+            }
+            document.getElementById("form2").submit();
+          })
+        }
+    </script>
+    </section><!-- End Services Section -->
+<!--=====concern certificate======-->
+<section id="concern" class="concern-mf pt-5 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8" style="margin-left:220px">
+        <div class="box-shadow-full">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:200px;color:crimson">CONCERN&nbsp;CERTIFICATE</p></div>
+                 <div align="center" style="margin-left:200px;background-color:rgb(6, 233, 249)">
+                     <form action="concern.html" role="form" class="form" align="center" id="form3">
+                       <br>
+                        <input type="date" placeholder="date" class="form-control" id="date3">
+                        <br>
+                        <input type="text" placeholder="registration nmuber" class="form-control" id="rno3">
+                        <br>
+                        <input type="text" placeholder="purpose" class="form-control" id="purpose3">
+                        <br>
+                        <button class="btn btn-primary"id="b3">submit</button>
+
+                     </form>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    if(document.getElementById('b3').clicked==true)
+    {
+      b2.addEvetListener("onclick",function()
+      {
+        if(typeof(localStorage) != "undefined")
+        {
+           localStorage.date3= document.getElementById("date3").value;
+           localStorage.regno3=document.getElementById("rno3").value;
+           localStorage.pur3= document.getElementById("purpose3").value;
+           localStorage.yr3=document.getElementById("year3").value;
+        }
+        document.getElementById("form3").submit();
+      })
+    }
+</script>
+</section>    
+ <!-- ======fee section==== -->
+ <section id="fee" class="fee-mf pt-5 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8" style="margin-left:220px">
+        <div class="box-shadow-full">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:200px;color:crimson">FEE&nbsp;CERTIFICATE</p></div>
+                 <div align="center" style="margin-left:200px;background-color:rgb(152, 6, 249)">
+                     <form action="fee.html" role="form" class="form" align="center" id="form4">
+                       <br>
+                        <input type="date" placeholder="date" class="form-control" id="date4">
+                        <br>
+                        <input type="text" placeholder="registration nmuber" class="form-control" id="rno4">
+                        <br>
+                        <input type="text" placeholder="purpose" class="form-control" id="purpose4">
+                        <br>
+                        <button class="btn btn-primary"id="b4">submit</button>
+
+                     </form>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    if(document.getElementById('b4').clicked==true)
+    {
+      b2.addEvetListener("onclick",function()
+      {
+        if(typeof(localStorage) != "undefined")
+        {
+           localStorage.date4= document.getElementById("date4").value;
+           localStorage.regno4=document.getElementById("rno4").value;
+           localStorage.pur4= document.getElementById("purpose4").value;
+           localStorage.yr4=document.getElementById("year4").value;
+        }
+        document.getElementById("form4").submit();
+      })
+    }
+</script>
+</section>            
+               <!-- ======residence section==== -->
+               <section id="residence" class="residence-mf pt-5 route">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8" style="margin-left:220px">
+                      <div class="box-shadow-full">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:200px;color:crimson">RESIDENCE&nbsp;CERTIFICATE</p></div>
+                               <div align="center" style="margin-left:200px;background-color:rgb(249, 6, 160)">
+                                   <form action="residence.html" role="form" class="form" align="center" id="form5">
+                                     <br>
+                                      <input type="date" placeholder="date" class="form-control" id="date5">
+                                      <br>
+                                      <input type="text" placeholder="registration nmuber" class="form-control" id="rno5">
+                                      <br>
+                                      <input type="text" placeholder="purpose" class="form-control" id="purpose5">
+                                      <br>
+                                      <button class="btn btn-primary"id="b5">submit</button>
+              
+                                   </form>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  if(document.getElementById('b5').clicked==true)
+                  {
+                    b2.addEvetListener("onclick",function()
+                    {
+                      if(typeof(localStorage) != "undefined")
+                      {
+                         localStorage.date5= document.getElementById("date5").value;
+                         localStorage.regno5=document.getElementById("rno5").value;
+                         localStorage.pur5= document.getElementById("purpose5").value;
+                         localStorage.yr5=document.getElementById("year5").value;
+                      }
+                      document.getElementById("form5").submit();
+                    })
+                  }
+              </script>
+              </section> 
+        <!-- ====internship section====   -->
+        <section id="internship" class="internship-mf pt-5 route">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" style="margin-left:220px">
+                <div class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:200px;color:crimson">INTERNSHIP&nbsp;CERTIFICATE</p></div>
+                         <div align="center" style="margin-left:200px;background-color:rgb(227, 250, 94)">
+                             <form action="internship.html" role="form" class="form" align="center" id="form6">
+                               <br>
+                                <input type="date" placeholder="date" class="form-control" id="date6">
+                                <br>
+                                <input type="text" placeholder="registration nmuber" class="form-control" id="rno6">
+                                <br>
+                                <input type="text" placeholder="purpose" class="form-control" id="purpose6">
+                                <br>
+                                <button class="btn btn-primary"id="b6">submit</button>
+        
+                             </form>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            if(document.getElementById('b6').clicked==true)
+            {
+              b2.addEvetListener("onclick",function()
+              {
+                if(typeof(localStorage) != "undefined")
+                {
+                   localStorage.date6= document.getElementById("date6").value;
+                   localStorage.regno6=document.getElementById("rno6").value;
+                   localStorage.pur6= document.getElementById("purpose6").value;
+                   localStorage.yr6=document.getElementById("year6").value;
+                }
+                document.getElementById("form6").submit();
+              })
+            }
+        </script>
+        </section>   
+        <!-- ====study and conduct section===== -->
+        <section id="study" class="study-mf pt-5 route">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" style="margin-left:220px">
+                <div class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-5"><p class="display-5" align="center" style="margin-left:150px;color:crimson">STUDY&nbsp;AND&nbsp;CONDUCT&nbsp;CERTIFICATE</p></div>
+                         <div align="center" style="margin-left:200px;background-color:rgb(249, 180, 6)">
+                             <form action="conduct.html" role="form" class="form" align="center" id="form7">
+                               <br>
+                                <input type="date" placeholder="date" class="form-control" id="date7">
+                                <br>
+                                <input type="text" placeholder="registration nmuber" class="form-control" id="rno7">
+                                <br>
+                                <input type="text" placeholder="purpose" class="form-control" id="purpose7">
+                                <br>
+                                <button class="btn btn-primary"id="b7">submit</button>
+        
+                             </form>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            if(document.getElementById('b7').clicked==true)
+            {
+              b2.addEvetListener("onclick",function()
+              {
+                if(typeof(localStorage) != "undefined")
+                {
+                   localStorage.date7= document.getElementById("date7").value;
+                   localStorage.regno7=document.getElementById("rno7").value;
+                   localStorage.pu7= document.getElementById("purpose7").value;
+                   localStorage.yr7=document.getElementById("year7").value;
+                }
+                document.getElementById("form7").submit();
+              })
+            }
+        </script>
+        </section>   
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

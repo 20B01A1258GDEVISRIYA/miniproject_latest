@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residence certificate</title>
+    <style>
+        .div1{
+            margin-left:40px;
+            font-size:large;
+        }
+         .div2{
+              line-height: 200px;
+        }
+        .div3{
+            line-height: 200px;
+            
+        }
+    </style>
+</head>
+<body onclick="printfunction()" onload="setData()">
+    <h4 align="right" style="font-family: cursive;">Date:<span id="d5"></span></h4>
+    <h1 align="center" class="div2"><u>RESIDENCE CERTIFICATE</u></h1>
+    <div>
+    <div class="div1" style="font-family: cursive;"> &nbsp;&nbsp;&nbsp;&nbsp;  This is to certify that <b>Ms. ______, Regd. No.<span id="reg5"></span>,</b></b><br><br>
+             is a student of this institute. She has joined in the 1st BDS course during August 2016.<br><br>
+             At present she is studying 3rd BDS course. <br><br><br><br>
+        <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;She is residing in the college attached hostel in the below mentioned address:
+        </div><br><br> 
+        <div style="font-family: cursive;">
+        This certificate is issued with reference to her letter dated _____ for<br><br><span id="p5"></span> purpose.
+        </div>
+        <div class="div3" align="right" style="font-family: cursive;">PRINCIPAL</div>
+        </div>
+        <script>
+            function printfunction()
+            {
+                window.print();
+            }
+            function setData()
+        {
+            if(typeof(localStorage) != "undefined")
+            {
+              document.getElementById("d5").innerHTML=localStorage.date5;
+              document.getElementById("reg5").innerHTML = localStorage.regno5;
+              document.getElementById("p5").innerHTML=localStorage.pur5;
+              document.getElementById("y5").innerHTML = localStorage.yr5;
+    }
+}
+        </script>
+    
+</body>
+</html>

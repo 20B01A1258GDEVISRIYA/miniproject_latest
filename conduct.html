@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study and conduct certificate</title>
+    <style>
+        .div1{
+            margin-left:40px;
+            font-size:large;
+        }
+         .div2{
+              line-height: 200px;
+        }
+        .div3{
+            line-height: 200px;
+            
+        }
+    </style>
+</head>
+<body onclick="printfunction()" onload="setData()">
+    <h4 align="right" style="font-family: cursive;">Date:<span id="d7"></span></h4>
+    <h1 align="center" class="div2"><u>STUDY AND CONDUCT CERTIFICATE</u></h1>
+
+    <div>
+
+      <div class="div1" style="font-family: cursive;"> &nbsp;&nbsp;&nbsp;&nbsp;  This is to certify that <b>Ms. ______, Regd. No.<span id="reg7"></span>,</b></b><br><br>
+             is a student of this institute. She has joined in the First BDS course during August 2014<br><br>
+             and completed her Final BDS course during August 2018.  <br><br><br><br>
+              <div>
+                 &nbsp;&nbsp;&nbsp;&nbsp;She has completed her one year compulsory rotatory internship programme from 
+                <br><br>01.10.2018 to 30.09.2018 at this college.</div><br><br> 
+              <div>
+                During her tenure, her character and conduct were found to be Satisfactory. 
+        </div>
+        <div class="div3" align="right" style="font-family: cursive;">PRINCIPAL</div>
+        </div>
+        <script>
+            function printfunction(){
+                window.print();
+            }
+            function setData()
+        {
+            if(typeof(localStorage) != "undefined")
+            {
+              document.getElementById("d7").innerHTML=localStorage.date7;
+              document.getElementById("reg7").innerHTML = localStorage.regno7;
+              document.getElementById("p7").innerHTML=localStorage.pur7;
+              document.getElementById("y7").innerHTML = localStorage.yr7;
+    }
+}
+        </script>
+    
+</body>
+</html>
